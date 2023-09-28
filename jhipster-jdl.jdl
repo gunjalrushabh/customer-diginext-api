@@ -1,0 +1,53 @@
+
+
+entity Customer {
+
+    @Id customerId String
+    accountNumber String
+    phoneNumber  String
+    fullName  String
+    email String
+    aadharNumber String
+    pancardNumber String
+    birthdate String 
+    age Integer
+    gender String 
+    maritalStatus String
+    residentialStatus String 
+    form60 String
+    formSixtyAckgeNo String
+    category String
+    nominee String
+    verify String
+    fax String
+    mob1 String
+	mob2 String
+    telephone String
+    ckyc String
+    refckyc String 
+    gstn String	
+	createdAt LocalDate
+	modifiedAt LocalDate
+	enable Boolean
+    
+}
+ entity Address {
+
+    @Id id String
+    houseNo String
+    city String
+    tahsil String
+    district String
+    state String
+    pincode String
+	createdAt LocalDate
+	modifiedAt LocalDate
+	enable Boolean
+ }
+relationship OneToMany {
+  Customer{address} to Address{customer}
+}
+dto * with mapstruct
+service all with serviceImpl
+
+ 
