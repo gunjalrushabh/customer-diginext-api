@@ -163,11 +163,11 @@ spring:
       client:
         provider:
           oidc:
-            issuer-uri: http://localhost:9080/realms/jhipster
+            issuer-uri: https://keycloak.alphaware.io/realms/realmetest
         registration:
           oidc:
-            client-id: internal
-            client-secret: internal
+            client-id: microservice-auth
+            client-secret: microservice-auth
             scope: openid, profile, email, offline_access # last one for refresh tokens
 
 server:

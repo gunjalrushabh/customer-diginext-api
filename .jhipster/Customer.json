@@ -1,0 +1,134 @@
+{
+  "applications": "*",
+  "changelogDate": "20230928054309",
+  "clientRootFolder": "customer-diginext-api",
+  "databaseType": "sql",
+  "dto": "mapstruct",
+  "entityTableName": "customer",
+  "fields": [
+    {
+      "fieldName": "customerId",
+      "fieldType": "String",
+      "options": {
+        "id": true
+      }
+    },
+    {
+      "fieldName": "accountNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "phoneNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fullName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "aadharNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "pancardNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "birthdate",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "age",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "gender",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "maritalStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "residentialStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "form60",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "formSixtyAckgeNo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "category",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nominee",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "verify",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fax",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "mob1",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "mob2",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "telephone",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ckyc",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "refckyc",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "gstn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdAt",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "modifiedAt",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "enable",
+      "fieldType": "Boolean"
+    }
+  ],
+  "microserviceName": "customer-diginext-api",
+  "name": "Customer",
+  "relationships": [
+    {
+      "otherEntityName": "address",
+      "otherEntityRelationshipName": "customer",
+      "relationshipName": "address",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}
